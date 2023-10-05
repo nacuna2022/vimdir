@@ -32,7 +32,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
 Plugin 'vim-airline/vim-airline'
@@ -42,7 +42,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'Raimondi/delimitMate'
-"Plugin 'ryanoasis/vim-devicons'
+Plugin 'ryanoasis/vim-devicons'
 Plugin 'MattesGroeger/vim-bookmarks'
 Plugin 'chrisbra/unicode.vim'
 Plugin 'mg979/vim-visual-multi'
@@ -79,7 +79,7 @@ endif
 
 
 let g:airline_theme='simple'
-"let g:airline_powerline_fonts=1
+let g:airline_powerline_fonts=1
 
 set nowrap
 set ruler
@@ -94,8 +94,13 @@ set expandtab "for converting tabs to spaces
 set cc=80
 set smartindent
 
-#set guifont=Consolas:h10:cANSI
+
+"select fonts by typing set guifont=*
+
+"set guifont=Consolas:h10:cANSI
 "set guifont=Inconsolata:h10:cANSI
+"set guifont=FiraMono\Nerd\ Font\ 10
+
 set hlsearch
 
 "remove arrows keys bindings - they are annoying
