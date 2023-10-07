@@ -1,6 +1,7 @@
-if has("gui_running")
-
 set encoding=utf-8
+
+" we check to see if Vundle already exists, before loading it
+if finddir(".vim/bundle/Vundle.vim", "$HOMEDIR") == ".vim/bundle/Vundle.vim"
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -65,17 +66,14 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-endif "gui_running
+endif "if vundle exists"
 
-"let g:ycm_global_ycm_extra_conf = 'C:\Users\Administrator\.vim\bundle\YouCompleteMe\third_party\ycmd\cpp\ycm\.ycm_extra_conf.py'
 
 autocmd FileType make setlocal noexpandtab
 
 syntax on
 
-if has("gui_running")
-	colorscheme inkpot
-endif
+colorscheme inkpot
 
 
 let g:airline_theme='simple'
