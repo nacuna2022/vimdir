@@ -1,7 +1,7 @@
 set encoding=utf-8
 
 " we check to see if Vundle already exists, before loading it
-if finddir(".vim/bundle/Vundle.vim", "$HOMEDIR") == ".vim/bundle/Vundle.vim"
+"if finddir(".vim/bundle/Vundle.vim", "$HOMEDIR") == ".vim/bundle/Vundle.vim"
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -66,7 +66,7 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-endif "if vundle exists"
+"endif "if vundle exists"
 
 
 autocmd FileType make setlocal noexpandtab
