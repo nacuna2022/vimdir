@@ -86,8 +86,8 @@ set backspace=indent,eol,start
 
 set tabstop=8
 set shiftwidth=8
-set expandtab "for converting tabs to spaces
-"set noexpandtab "for not converting tabs to spaces
+"set expandtab "for converting tabs to spaces
+set noexpandtab "for not converting tabs to spaces
 
 set cc=80
 set smartindent
