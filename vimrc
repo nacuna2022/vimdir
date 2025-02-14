@@ -91,7 +91,7 @@ set noexpandtab "for not converting tabs to spaces
 
 set cc=80
 set smartindent
-
+set autoindent
 
 "select fonts by typing set guifont=*
 
