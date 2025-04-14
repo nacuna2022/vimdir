@@ -1,7 +1,7 @@
 set encoding=utf-8
 
-" we check to see if Vundle already exists, before loading it
-"if finddir(".vim/bundle/Vundle.vim", "$HOMEDIR") == ".vim/bundle/Vundle.vim"
+" nacuna??? note to self. vim-plug is your package manager. not vundle
+"
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
