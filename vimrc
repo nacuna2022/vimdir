@@ -22,6 +22,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'MattesGroeger/vim-bookmarks'
 Plug 'chrisbra/unicode.vim'
 Plug 'mg979/vim-visual-multi'
+Plug 'dense-analysis/ale'
 
 call plug#end()
 
@@ -101,10 +102,10 @@ nnoremap <silent> <C-j> :res -3<CR>
 nnoremap <silent> <C-k> :res +3<CR>
 
 "status line 
-set laststatus=2
-set statusline=
-set statusline+=%f%m
-set statusline+=%=%y\ %l,%c\ %p%%\  
+"set laststatus=2
+"set statusline=
+"set statusline+=%f%m
+"set statusline+=%=%y\ %l,%c\ %p%%\  
 
 nnoremap <A-j> :m .+1<CR>==
 nnoremap <A-k> :m .-2<CR>==
@@ -129,9 +130,19 @@ let g:org_todo_keywords = [['TODO(t)', 'INPROGRESS(i)', '|', 'DONE(d)'],
       \ ['CANCELED(c)']]
 
 
+
 " vimwiki settings
 
 " define my own wiki on the usual "custom" git repo
 let main_wiki = {}
 let main_wiki.path = '~/git/vimwiki/'
 let g:vimwiki_list = [main_wiki]
+
+" ALE Asynchronous Lint Engine 
+let g:ale_linters = {
+	\ 'c': ['cppcheck'],
+	\ 'cpp': ['cppcheck'],
+\ }
+
+let g:ale_cppcheck_options = '--enable=warning,style,performance,portability,unusedFunction --inconclusive --force --check-level=exhaustive --std=c11'
+"let g:ale_cppcheck_options = '--enable=all --check-level=exhaustive --std=c11'
